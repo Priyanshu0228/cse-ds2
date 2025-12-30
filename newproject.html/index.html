@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crunchyroll Basic Clone</title>
+    <style>
+        /* Basic Setup */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Black Background */
+            color: white;
+        }
+
+        /* 1. Header Section */
+        .header {
+            background-color: #23252b; /* Dark Gray */
+            padding: 20px;
+            border-bottom: 2px solid #f47521; /* Orange Line */
+        }
+
+        .logo {
+            color: #f47521; /* Orange Text */
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .menu-link {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+
+        /* 2. Banner Section */
+        .banner {
+            background-image: url('https://images.unsplash.com/photo-1541562232579-512a21360020?q=80&w=1000');
+            height: 400px;
+            background-size: cover;
+            padding: 50px;
+        }
+
+        .banner-text-box {
+            background-color: rgba(0, 0, 0, 0.7); /* See-through black box */
+            padding: 20px;
+            width: 400px;
+            margin-top: 100px;
+        }
+
+        .banner-title {
+            font-size: 40px;
+            margin: 0 0 10px 0;
+        }
+
+        .watch-button {
+            background-color: #f47521;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* 3. Anime List Section */
+        .content-section {
+            padding: 20px;
+        }
+
+        .section-header {
+            border-left: 5px solid #f47521;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* This replaces the complex 'Grid' system */
+        .anime-card {
+            width: 180px;
+            display: inline-block; /* Makes divs sit side-by-side */
+            margin-right: 15px;
+            margin-bottom: 30px;
+            vertical-align: top;
+        }
+
+        .poster-image {
+            width: 100%;
+            height: 270px;
+            background-color: #333; /* Gray placeholder if image fails */
+            object-fit: cover;
+        }
+
+        .anime-title {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .anime-type {
+            font-size: 12px;
+            color: #aaa; /* Light Gray */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <span class="logo">CRUNCHYROLL</span>
+        <a href="#" class="menu-link">Browse</a>
+        <a href="#" class="menu-link">Manga</a>
+        <a href="#" class="menu-link">Games</a>
+        <a href="#" class="menu-link">Login</a>
+    </div>
+
+    <!-- Banner (Featured Anime) -->
+    <div class="banner">
+        <div class="banner-text-box">
+            <h1 class="banner-title">Jujutsu Kaisen</h1>
+            <p>Yuji Itadori is a boy with tremendous physical strength...</p>
+            <button class="watch-button">START WATCHING</button>
+        </div>
+    </div>
+
+    <!-- Popular Section -->
+    <div class="content-section">
+        <h2 class="section-header">Popular Anime</h2>
+
+        <!-- Card 1 -->
+        <div class="anime-card">
+            <img src="https://via.placeholder.com/180x270/333/orange?text=One+Piece" class="poster-image">
+            <div class="anime-title">One Piece</div>
+            <div class="anime-type">Series</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="anime-card">
+            <img src="https://via.placeholder.com/180x270/333/orange?text=Naruto" class="poster-image">
+            <div class="anime-title">Naruto Shippuden</div>
+            <div class="anime-type">Series</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="anime-card">
+            <img src="https://via.placeholder.com/180x270/333/orange?text=Demon+Slayer" class="poster-image">
+            <div class="anime-title">Demon Slayer</div>
+            <div class="anime-type">Series</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="anime-card">
+            <img src="https://via.placeholder.com/180x270/333/orange?text=Spy+Family" class="poster-image">
+            <div class="anime-title">Spy x Family</div>
+            <div class="anime-type">Series</div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="anime-card">
+            <img src="https://via.placeholder.com/180x270/333/orange?text=Chainsaw+Man" class="poster-image">
+            <div class="anime-title">Chainsaw Man</div>
+            <div class="anime-type">Series</div>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding: 20px; color: #777;">
+        <p>Simple Clone Project</p>
+    </div>
+
+</body>
+</html>
